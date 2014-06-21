@@ -25,7 +25,7 @@ var notificationView = Backbone.View.extend({
 	},
 
 	render: function () {
-		this.$el.append(Handlebars.compile(this.template())(options));
+		this.$el.append(Handlebars.compile(this.template())(this.options));
 
 		return this;
 	}

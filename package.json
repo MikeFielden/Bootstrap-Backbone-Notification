@@ -1,20 +1,19 @@
 {
-	"name": "Bootstrap-Backbone-Notification",
-	"version": "0.0.1",
-	"private": false,
-
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/MikeFielden/Bootstrap-Backbone-Notification.git"
-	},
-
-	"dependencies": {
-		"backbone": "1.1.2",
-		"handlebars": "^2.0.0-alpha.4"
-	},
-
-	"author": {
-		"name": "Mike Fielden Jr.",
-		"email": "fielden.mike@gmail.com"
-	}
+  "name": "Bootstrap-Backbone-Notification",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/MikeFielden/Bootstrap-Backbone-Notification.git"
+  },
+  "dependencies": {
+    "backbone": "1.1.2",
+    "handlebars": "^2.0.0-alpha.4",
+    "gulp": "^3.8.1",
+    "gulp-bump": "^0.1.8"
+  },
+  "author": {
+    "name": "Mike Fielden Jr.",
+    "email": "fielden.mike@gmail.com"
+  }
 }
