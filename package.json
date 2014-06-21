@@ -1,6 +1,6 @@
 {
   "name": "Bootstrap-Backbone-Notification",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "repository": {
     "type": "git",
@@ -9,6 +9,7 @@
   "dependencies": {
     "backbone": "1.1.2",
     "handlebars": "^2.0.0-alpha.4",
+    "lodash": "^2.4.1",
     "gulp": "^3.8.1",
     "gulp-bump": "^0.1.8"
   },
