@@ -20,7 +20,7 @@ var styleClasses = {
 		'normal': 'ani-medium',
 		'slow': 'ani-slow'
 	},
-}
+};
 
 var notificationView = Backbone.View.extend({
 	template: function () {
@@ -33,7 +33,7 @@ var notificationView = Backbone.View.extend({
 
 	className: 'alert row-fluid col-lg-8 col-lg-offset-2 ' +
 	 'col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ' +
-	 'fadeInDown note-container',
+	 'note-container',
 
 	events: {
 		'click button.close': 'closeNotification'
@@ -58,6 +58,10 @@ var notificationView = Backbone.View.extend({
 			this.$el.addClass(type);
 		}
 
+		if (this.options.animateInClass) {
+			this.$el.addClass(this.options.animateInClass);
+		}
+
 		this.render();
 	},
 
@@ -72,8 +76,15 @@ var notificationView = Backbone.View.extend({
 
 		this.trigger('close');
 
-		this.off();
-		this.remove();
+		if (this.options.animateOutClass) {
+			this.$el.on('animationend webkitTransitionEnd', function () {
+				this.$el.off().remove();
+			}.bind(this));
+
+			this.$el.addClass(this.options.animateOutClass);
+		} else {
+			this.$el.off().remove();
+		}
 	}
 });
 
