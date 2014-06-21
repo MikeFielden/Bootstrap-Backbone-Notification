@@ -11,8 +11,8 @@ var notificationView = Backbone.View.extend({
 		].join('');
 	},
 
-	className: 'alert row-fluid col-lg-8 col-lg-offset-2' +
-	 'col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1' +
+	className: 'alert row-fluid col-lg-8 col-lg-offset-2 ' +
+	 'col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ' +
 	 'fadeInDown ani-fast error-container',
 
 	events: {
